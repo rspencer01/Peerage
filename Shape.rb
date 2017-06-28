@@ -42,9 +42,9 @@ class Shape
   end
 
   def get_image()
-    image = colourise("#{@type}.png", @texture.backhexcode)
+    image = colourise("templates/#{@type}.png", @texture.backhexcode)
     if @texture.erminecolor and not @covered
-      ermine_image = colourise("ermine.png", @texture.erminecolor)
+      ermine_image = colourise("templates/ermine.png", @texture.erminecolor)
       image.compose! ermine_image
     end
     y_lo = @restriction== :bottom ? image.height/2 : 0
@@ -67,7 +67,7 @@ class Shape
       end
     end
     if @texture.charge
-      charge_image = colourise("#{@texture.charge}.png", @texture.forehexcode)
+      charge_image = colourise("templates/#{@texture.charge}.png", @texture.forehexcode)
       positions = []
       scale = 0
       if @type == :field and @restriction.nil? and @children.length==0

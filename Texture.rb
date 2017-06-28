@@ -2,12 +2,12 @@ METALS = [:white, :yellow]
 COLORS = [:red, :black, :blue, :green]
 
 HEXCODES = {
-  :red => 0x881111ff,
-  :blue => 0x111188ff,
+  :red => 0xaa1111ff,
+  :blue => 0x1111aaff,
   :green => 0x114411ff,
-  :white => 0xddddddff,
+  :white => 0xaaaaaaff,
   :black => 0x000000ff,
-  :yellow => 0xdddd11ff
+  :yellow => 0xaaaa11ff
 }
 
 NAMES =
